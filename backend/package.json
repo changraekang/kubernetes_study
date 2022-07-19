@@ -1,0 +1,28 @@
+{
+  "name": "web",
+  "version": "0.1.1",
+  "description": "AI Cryptocurrency Exchange",
+  "scripts": {
+    "build": "npm-run-all prefix:css compress:css",
+    "start": "cd backend; node web.js",
+    "production": "cd backend; NODE_ENV=production node web.js",
+    "dev": "cd backend; NODE_ENV=dev node web.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "mobile-detect": "^1.4.3",
+    "morgan": "^1.10.0",
+    "node-env-file": "^0.1.8",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
