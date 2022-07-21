@@ -7,8 +7,8 @@ const Chart = () => {
         <div>
             <TradingViewStockChartWidget 
               symbol='UPBIT:BTCKRW'
-              theme='Light' 
-              range='12m'
+              interval='1'
+              timezone= 'Asia/Seoul'
             />
         </div>
     );
